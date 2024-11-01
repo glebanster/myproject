@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxon</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Luxon - Освещаем будущее на каждом повороте</h1>
+        <nav>
+            <button class="menu-toggle" aria-label="Открыть меню">&#9776;</button>
+            <ul class="nav-list">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="cars.html">Модельный ряд</a></li>
+                <li><a href="#booking">Записаться на Тест-драйв</a></li>
+                <li><a href="#service-booking">Сервисное обслуживание</a></li>
+                <li><a href="https://aqualime.kz/">Наш партнер</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container clearfix">        
+        <section id="about">
+            <h2>О нас</h2>
+            <p><b>Luxon</b> — ведущий автосалон, специализирующийся на продаже и обслуживании электромобилей. 
+                Мы предлагаем широкий ассортимент современных электрокаров от лучших мировых производителей, включая как бюджетные модели, так и премиум-класс. 
+                В Luxon вы найдете идеальный автомобиль для города или дальних поездок.
+            <br><br>
+                Наши услуги включают полную диагностику и сервисное обслуживание электромобилей, установку и настройку зарядных станций для дома и офиса, а также консультации по выбору авто и финансовым программам. 
+                Присоединяйтесь к экологичному будущему с Luxon — вашим надежным партнером в мире электрической мобильности.
+            </p>
+        </section>
+
+        <section id="booking">
+            <h2>Запись на Тест-драйв</h2>
+            <form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br><br>
+                
+                <label for="car">Выбор модели:</label>
+                <select id="car" name="car">
+                    <option value="" disabled selected>Выбор модели</option>
+                    <option value="100">Luxon 100</option>
+                    <option value="500X">Luxon 500X</option>
+                    <option value="900">Luxon 900</option>
+                    <option value="007">Luxon 007</option>
+                    <option value="Terra">Luxon Terra</option>
+                    <option value="Falcon">Luxon Falcon</option>
+                </select>
+                <br><br>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <section id="service-booking">
+            <h2>Сервисное обслуживание</h2>
+            <form>
+                <label for="service-name">Имя:</label>
+                <input type="text" id="service-name" name="name" required>
+                <br><br>
+        
+                <label for="service-phone">Телефон:</label>
+                <input type="tel" id="service-phone" name="phone" required>
+                <br><br>
+        
+                <label for="mileage">Текущий пробег:</label>
+                <input type="number" id="mileage" name="mileage" required>
+                <br><br>
+        
+                <label for="service-car">Выбор модели:</label>
+                <select id="service-car" name="car" required>
+                    <option value="" disabled selected>Выбор модели</option>
+                    <option value="100">Luxon 100</option>
+                    <option value="500X">Luxon 500X</option>
+                    <option value="900">Luxon 900</option>
+                    <option value="007">Luxon 007</option>
+                    <option value="Terra">Luxon Terra</option>
+                    <option value="Falcon">Luxon Falcon</option>
+                </select>
+                <br><br>
+        
+                <label for="reason">Причины обращения:</label>
+                <select id="reason" name="reason" required>
+                    <option value="" disabled selected>Причины</option>
+                    <option value="battery">Поддержание батареи</option>
+                    <option value="software">Обновление ПО</option>
+                    <option value="diagnostics">Диагностика электрики</option>
+                    <option value="check-in">Проверка тормозов</option>
+                    <option value="warranty">Сохранение гарантии</option>
+                    <option value="other">Другое</option>
+                </select>
+                <br><br>
+        
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Адрес: ул. Аль-Фараби 150, г. Алматы</p>
+        <p>Телефон: +7 (707) 456-60-60</p>
+        <p>&copy; 2024 Luxon. Все права защищены.</p>
+    </footer>
+</body>
+</html>
